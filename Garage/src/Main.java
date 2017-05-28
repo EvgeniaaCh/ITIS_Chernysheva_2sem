@@ -8,7 +8,6 @@ public class Main {
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-//        while (true) {
             int m = sc.nextInt();
             for (int i = 0; i < m; i++) {
                 int operation = sc.nextInt();
@@ -25,10 +24,11 @@ public class Main {
                     company.getAll();
                 }
             }
-//        }
     }
 
     private static Flat getFlat() {
+        // Если у адреса нет корпуса, то вводим -
+        // Если у адреса нет строения, то вводим 0
         int numberHouse = sc.nextInt();
         String numberKorpus = sc.next();
         int numberStructure = sc.nextInt();
